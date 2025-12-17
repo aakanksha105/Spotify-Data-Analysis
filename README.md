@@ -1,115 +1,107 @@
-🎵 Spotify Data Analysis
+# 🎵 Spotify Data Analysis
 
-📌 Project Overview
-This project is a desktop-based data analysis application built using Python, MongoDB, and Tkinter to analyze Spotify music trends.
-The application connects to a MongoDB database containing Spotify chart data and allows users to execute predefined analytical queries through an interactive graphical user interface.
-The goal of this project is to demonstrate NoSQL data modeling, aggregation pipelines, and UI-driven analytics using real-world music streaming data.
+A desktop-based data analysis application built using **Python**, **MongoDB**, and **Tkinter** to analyze Spotify music trends through an interactive graphical user interface.
 
-🛠️ Tech Stack
-Programming Language: Python
-Database: MongoDB (NoSQL)
-Database Driver: PyMongo
-GUI Framework: Tkinter & ttk
-Data Processing: MongoDB Aggregation Framework
-Date Handling: datetime, timezone
+🔗 **GitHub Repository:**  
+https://github.com/aakanksha105/Spotify-Data-Analysis
 
-📂 Dataset Description
-The MongoDB collection stores Spotify chart data with fields such as:
-track_name
-artist_names
-artist_genre
-streams
-rank
-previous_rank
-weeks_on_chart
-release_date
-week
-audio_features (danceability, energy, loudness, valence, etc.)
-country
-collab
+---
 
-🖥️ Application Features
-Full-screen Tkinter desktop UI
-Button-driven execution of analytical queries
-Result visualization using structured tables (Treeview)
-MongoDB aggregation pipelines for efficient data processing
-Clean separation of query logic and UI logic
+## 📌 Project Overview
 
-📊 Implemented Queries
-Query 1: Top Tracks & Artists (2022)
-Analyzes artist names and track names based on total streams
-Filters non-collaborative tracks
-Displays Top 20 most-streamed tracks released in 2022
+This project is a **desktop-based data analytics application** that connects to a MongoDB database containing Spotify chart data.  
+It allows users to execute predefined analytical queries using a **Tkinter-based GUI** and visualize results in structured tabular form.
 
-Query 2: Rank Comparison (2022)
-Compares current rank vs previous rank
-Identifies ranking changes for tracks in 2022
-Displays Top 20 results sorted by previous rank
+The primary goal of this project is to demonstrate:
+- NoSQL data modeling
+- MongoDB aggregation pipelines
+- Desktop UI-driven analytics
+- Real-world data analysis using Spotify streaming data
 
-Query 3: Audio Feature Analysis (Argentina)
-Analyzes tracks streamed in Argentina
-Computes maximum values for:
-Streams
-Danceability
-Energy
-Loudness
-Valence
-Speechiness
-Liveness
-Displays Top 10 tracks by streams
+---
 
-Query 4: Popularity by Genre (2021–2022)
-Analyzes track popularity across artist genres
-Uses weeks on chart as a popularity metric
-Displays top genres with representative tracks
+## 🛠️ Tech Stack
 
-🧩 Project Structure
+- **Programming Language:** Python  
+- **Database:** MongoDB (NoSQL)  
+- **Database Driver:** PyMongo  
+- **GUI Framework:** Tkinter, ttk  
+- **Data Processing:** MongoDB Aggregation Framework  
+- **Date Handling:** `datetime`, `timezone`
 
-Spotify-Data-Analysis/
-│
-├── main.py                 # Tkinter UI + MongoDB queries
-├── README.md               # Project documentation
-└── requirements.txt        # Python dependencies
+---
 
-⚙️ Setup Instructions
+## 📂 Dataset Description
 
-1️⃣ Clone the Repository
+The MongoDB collection stores Spotify chart data with the following key fields:
 
-git clone https://github.com/aakanksha105/Spotify-Data-Analysis.git
-cd Spotify-Data-Analysis
+- `track_name`
+- `artist_names`
+- `artist_genre`
+- `streams`
+- `rank`
+- `previous_rank`
+- `weeks_on_chart`
+- `release_date`
+- `week`
+- `audio_features`
+  - danceability
+  - energy
+  - loudness
+  - valence
+  - speechiness
+  - liveness
+- `country`
+- `collab`
 
-2️⃣ Install Dependencies
+---
 
-pip install pymongo
+## 🖥️ Application Features
 
-3️⃣ Start MongoDB
-Ensure MongoDB is running locally:
+- Full-screen Tkinter desktop UI
+- Button-driven execution of analytical queries
+- Result visualization using `ttk.Treeview` tables
+- Efficient data processing using MongoDB aggregation pipelines
+- Clear separation of UI logic and query logic
 
-mongodb://localhost:27017/
+---
 
-4️⃣ Import Spotify Dataset
-Load your Spotify dataset into MongoDB:
+## 📊 Implemented Queries
 
-Database: Nosql_Project
-Collection: Spotify
+### **Query 1: Top Tracks & Artists (2022)**
+- Analyzes artist names and track names based on **total streams**
+- Filters **non-collaborative tracks**
+- Displays **Top 20 most-streamed tracks released in 2022**
 
-5️⃣ Run the Application
+---
 
-python main.py
+### **Query 2: Rank Comparison (2022)**
+- Compares **current rank vs previous rank**
+- Identifies ranking changes for tracks in 2022
+- Displays **Top 20 results** sorted by previous rank
 
-🧠 Learning Outcomes
-Hands-on experience with MongoDB aggregation pipelines
-Building desktop analytics applications using Tkinter
-Implementing real-world NoSQL queries
-Designing interactive UI components for data visualization
-Applying database-driven analytics concepts
+---
 
-🚀 Future Enhancements
-Add dynamic filtering options (year, country, genre)
-Export query results to CSV
-Integrate charts using Matplotlib or Seaborn
-Improve UI styling and responsiveness
-Add pagination for large result sets
+### **Query 3: Audio Feature Analysis (Argentina)**
+- Analyzes tracks streamed in **Argentina**
+- Computes maximum values for:
+  - Streams
+  - Danceability
+  - Energy
+  - Loudness
+  - Valence
+  - Speechiness
+  - Liveness
+- Displays **Top 10 tracks by streams**
 
-👩‍💻 Author
-Aakanksha Bhondve
+---
+
+### **Query 4: Popularity by Genre (2021–2022)**
+- Analyzes track popularity across **artist genres**
+- Uses **weeks on chart** as a popularity metric
+- Displays top genres with representative tracks
+
+---
+
+## 🧩 Project Structure
+
