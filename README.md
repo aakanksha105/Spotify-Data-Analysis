@@ -119,6 +119,7 @@ Make sure you have:
 ```bash
 pip install pymongo
 ```
+---
 
 ### 3️⃣ MongoDB Configuration
 MongoDB should be running on:
@@ -139,12 +140,15 @@ Spotify
 ```
 Ensure the dataset is loaded before running the application.
 
+---
+
 ### 4️⃣ Run the Application
 From the project directory, run:
 
 ```bash
 python main.py
 ```
+---
 
 ### 📈 Key Learning Outcomes
 - **Hands-on experience with MongoDB aggregation pipelines
@@ -152,6 +156,8 @@ python main.py
 - **Integrating NoSQL databases with Python applications
 - **Query optimization and data visualization
 - **Applying database concepts to real-world datasets
+  
+---
 
 ### 👩‍💻 Author
 Aakanksha Bhondve
