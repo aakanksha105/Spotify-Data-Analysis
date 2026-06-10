@@ -34,9 +34,7 @@ Spotify-Data-Analysis/
 ├── README.md
 ├── spotify.py
 ├── spotify.ipynb
-└── reports/
-    ├── NoSQL-Report.pdf
-    └── 2-Page-Proposal.pdf
+└── NoSQL-Report.pdf
 ```
 
 ## Dataset
