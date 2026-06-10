@@ -27,6 +27,9 @@ The application provides a Tkinter-based graphical user interface where users ca
 - **Data Handling:** datetime, timezone
 - **Dataset Source:** Spotify dataset from Kaggle
 
+## Project Structure
+
+```text
 Spotify-Data-Analysis/
 ├── README.md
 ├── spotify.py
