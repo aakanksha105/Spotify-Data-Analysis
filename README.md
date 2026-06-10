@@ -37,7 +37,7 @@ Spotify-Data-Analysis/
 └── reports/
     ├── NoSQL-Report.pdf
     └── 2-Page-Proposal.pdf
-
+```
 
 ## Dataset
 
